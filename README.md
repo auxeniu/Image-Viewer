@@ -16,26 +16,33 @@ This repository contains a minimal image viewer written in C that uses SDL2 for 
 ## SDL2 Installation
 
 ### Debian / Ubuntu
+```bash
 sudo apt update  
 sudo apt install libsdl2-dev
+```
 
 ### Arch Linux
+```bash
 sudo pacman -S sdl2
-
+```
 ### Fedora
+```bash
 sudo dnf install SDL2-devel
-
+```
 ### macOS (Homebrew)
+```bash
 brew install sdl2
-
+```
 ## Build
 Compile the program using the following command:
+```bash
 gcc -Wall -Wextra -g -o iv iv.c `sdl2-config --cflags --libs`
-
+```
 ## Usage
 The program expects image data to be provided via standard input:
+```bash
 cat image-binary.txt | ./iv
-
+```
 Replace `image-binary.txt` with a file containing the binary image data you want to display.
 
 ## Notes
