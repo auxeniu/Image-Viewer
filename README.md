@@ -41,9 +41,9 @@ gcc -Wall -Wextra -g -o iv iv.c `sdl2-config --cflags --libs`
 ## Usage
 The program expects image data to be provided via standard input:
 ```bash
-cat image-binary.txt | ./iv
+cat image-binary.ppm | ./iv
 ```
-Replace `image-binary.txt` with a file containing the binary image data you want to display.
+Replace `image-binary.ppm` with a file containing the binary image data you want to display.
 
 ## Notes
 - The input format must match what the program expects (raw/binary image data; check the code for further documentation).
